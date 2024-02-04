@@ -54,7 +54,6 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 			if (keys[DIK_SPACE] && !preKeys[DIK_SPACE])
 			{
 				player->Initalize();
-				player->bullet->Initalize();
 				for (int i = 0; i < 10; i++)
 				{
 					enemy[i]->Initalize();

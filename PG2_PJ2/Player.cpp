@@ -18,7 +18,12 @@ void Player::Initalize()
 	hpMax_ = 100.0f;;
 	hp_ = hpMax_;
 	isAlive_ = true;
+	CD = 0;
 	score_ = 0;
+	for (int i = 0; i < 10; i++)
+	{
+		bullet[i].Initalize();
+	}
 }
 void Player::Update(char* keys)
 {

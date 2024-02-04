@@ -18,7 +18,8 @@ void Bullet::Update() {
 	if (isShot) {
 		pos_.x += velocity_.x;
 		if (pos_.x > 1280) {
-			isShot = false;
+			//isShot = false;
+			Initalize();
 		}
 	}
 }
